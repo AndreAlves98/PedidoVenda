@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Clientes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="./img/LOGO-menu.png" alt="Corsul_Logo">
+
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="">Clientes</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./Clientes/teste01.html">Teste 01</a></li>
+                        <li><a href="#">Teste 02</a></li>
+                        <li><a href="#">Teste 03</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="dropdown">
+                    <a href="">Pedido de Venda</a>
+                
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Teste 04</a></li>
+                        <li><a href="#">Teste 05</a></li>
+                        <li><a href="#">Teste 06</a></li>
+                    </ul>
+    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<div id="header">
+<section>
+    <form id="form-row">
+
+        <div class="form-row">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Digite a Empresa...">
+        </div>
+
+
+        <div class="form-row">
+            <label for="cliente">Cliente</label>
+            <input type="text" id="cliente" name="cliente" placeholder="Digite o cliente...">
+        </div>
+
+        <div class="form-row">
+            <label for="representante">Representante</label>
+            <input type="text" id="representante" name="representante" placeholder="Digite o Representante...">
+        </div>
+
+        <div class="form-row">
+            <label for="pedidoVenda">Pedido de Venda</label>
+            <input type="number" id="pedidoVenda" name="pedidoVenda" placeholder="Digite o pedido de Venda...">
+        </div>
+
+        <div class="form-row">
+            <label class="select" for="status">Status</label>
+            <select class="select" name="status" id="status">
+                <option>Selecione o Status</option>
+                <option value="pendente">Pendente</option>
+                <option value="atendido">Atendido</option>
+                <option value="parcial">Parcial</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Consultar">
+        <input class="limpar" type="submit" value="Limpar">
+
+
+        <div class="data">
+            <div class="campo">
+                <label for="periodoInicio">Início do Período</label>
+                <input class="periodo" type="date" id="periodoInicio" name="peridoInicio">
+            </div>
+
+            <div class="campo">
+                <label for="periodoFim">Fim do Período</label>
+                <input class="periodo" type="date" id="periodoFim" name="periodoFim">
+            </div>
+        </div>
+    </form>
+
+<table id="orderTable">
+    <tr>
+        <th>Pedido</th>
+        <th>Nota</th>
+        <th>Emissão</th>
+        <th>Código</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Valor Unitário</th>
+    </tr>
+</table>
+
+</section>
+</div>
+<script src="./requisicaoFetch.js"></script>
+</body>
+</html>
